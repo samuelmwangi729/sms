@@ -46,6 +46,14 @@ if(isset($_POST['sub'])){
 							$db->execute();
 							$db->query('TRUNCATE TABLE examTotals');
 							$db->execute();
+							$db->query('TRUNCATE TABLE catTotals');
+							$db->execute();
+							$db->query('TRUNCATE TABLE averageResults');
+							$db->execute();
+							$db->query('TRUNCATE TABLE averageTotals');
+							$db->execute();
+							$db->query('TRUNCATE TABLE isAvPosted');
+							$db->execute();
 						}
 						if(isset($_GET['Num'])){
 							$db1=new Database();

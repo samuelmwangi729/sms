@@ -1,6 +1,12 @@
-classAverage
-Database.php
-pRINTaVERAGE
+Please open phpmyadmin, click school and then click sql on the top bar,
+copy and paste the following text into the textbox.
+
+
+
+
+
+
+
 
 
 truncate table eResults;
@@ -8,30 +14,23 @@ truncate table catTotals;
 truncate table examTotals;
 truncate table averageResults;
 truncate table averageTotals;
-
-
-CREATE TABLE `isAvPosted` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `exam` varchar(50) NOT NULL,
-  `class` varchar(2) NOT NULL,
-  `year` varchar(4) NOT NULL,
-  `term` varchar(3) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+truncate table isAvPosted;
 
 
 
-CREATE TABLE `averageResults` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `exam` varchar(20) NOT NULL,
-  `term` varchar(5) NOT NULL,
-  `Class` varchar(11) NOT NULL,
-  `Stream` varchar(10) NOT NULL,
-  `Year` varchar(4) NOT NULL,
-  `studentReg` varchar(7) NOT NULL,
-  `subject` varchar(100) NOT NULL,
-  `marks` int(11) NOT NULL,
-  `grade` varchar(3) DEFAULT '0',
-  `status` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+click go and then check if the system is Okay.
+This solves the problem

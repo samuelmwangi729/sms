@@ -209,7 +209,11 @@ if(isset($_POST['sub'])){
 													$sp=$db->getPoint($grade);
 													$totalPoints=$totalPoints+$sp;
 													$markx=$markx+$mark;
-													echo "<td style='font-size:8px;font-family:courier'>".$mark." ".$grade."</td>";
+													if($mark=="--"){
+														echo "<td style='font-size:8px;font-family:courier'>".$mark." --</td>";
+													}else{
+														echo "<td style='font-size:8px;font-family:courier'>".$mark." ".$grade."</td>";
+													}
 
 													//check if the totals have been posted
 													if($mark==0){
